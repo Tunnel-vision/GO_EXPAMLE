@@ -34,6 +34,20 @@ func main22() {
 	fmt.Println(t.Hour())
 }
 
+func main33(a int) {
+	switch {
+	case a < 10:
+		fmt.Println(a)
+		fallthrough
+	case a < 13:
+		fmt.Println(a)
+		fallthrough
+	default:
+		fmt.Println("null")
+	}
+}
+
 func main() {
-	main22()
+	//main22()
+	main33(5)
 }
